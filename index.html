@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Roostermaker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>Roostermaker</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Over</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Maak een nieuw rooster</h2>
+    <form id="schedule-form">
+      <label for="date">Datum:</label>
+      <input type="date" id="date" name="date">
+      <br>
+      <label for="start-time">Starttijd:</label>
+      <input type="time" id="start-time" name="start-time">
+      <br>
+      <label for="end-time">Eindtijd:</label>
+      <input type="time" id="end-time" name="end-time">
+      <br>
+      <label for="worker-name">Naam werknemer:</label>
+      <input type="text" id="worker-name" name="worker-name">
+      <br>
+      <label for="qualifications">Kwalificaties:</label>
+      <input type="text" id="qualifications" name="qualifications">
+      <br>
+      <button type="submit">Maak rooster</button>
+    </form>
+    <h2>Roosters</h2>
+    <div id="current-schedules"></div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
